@@ -4,13 +4,13 @@ Small, measured studies of attacks on LLM applications and the defenses against 
 Each study is a notebook that runs from saved results.
 
 All data here is synthetic. The setting is a fictional food bank that uses an AI assistant
-to read intake notes. No real organization or person is involved.
+to read intake form text. No real organization or person is involved.
 
 ## Studies
 
 | # | Question | Result | Main limit |
 |---|---|---|---|
-| [001](001-injection-detector/injection_detector.ipynb) | Can a detector catch prompt injection in intake notes? | An LLM judge caught all 21 attacks it answered with 0 false alarms, and gave no answer on 3. A keyword list caught 13 of 24 and flagged 5 real notes. | 58 hand-written notes, one model, one prompt |
+| [001](001-injection-detector/injection_detector.ipynb) | Can a classifier catch prompt injection in intake form text? | An LLM classifier caught 21 of 24 injected entries with 0 false alarms and gave no answer on the other 3. A keyword classifier caught 13 of 24 and flagged 5 of 34 normal entries. | 58 hand-written entries, one model, one prompt |
 
 ## Run
 

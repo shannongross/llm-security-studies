@@ -1,5 +1,6 @@
 pandas
 jupyter
+matplotlib
 # Only needed for the optional cell that calls the model:
 anthropic
 python-dotenv
